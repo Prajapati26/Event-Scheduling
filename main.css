@@ -1,0 +1,319 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+      
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #0056b3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+} 
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#event-List {
+    margin-top: 20px;
+}
+#events {
+    list-style-type: none;
+    padding-left: 0;
+    margin:10;
+}
+#events li {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure icons are contained within list item */
+    display: flex;
+    flex-direction: column; /* Stack event details vertically */
+}
+
+#events li div{
+    margin-bottom: 5px ; /* Add some spacing between each line */
+}
+
+#events li strong {
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 40px;
+}
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.95rem;
+    }
+}
+
+/* Large Screens (min-width: 992px) */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium Screens (min-width: 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.85rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Screens (min-width: 576px) */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.8rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.7rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.75rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.75rem;
+    }
+}
+
+/* Container for edit and delete icons */
+.icon-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Add space between icons */
+}
+
+.edit-icon {
+    font-size: 18px;
+    color: #030b13;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+    color: #0056b3;  /* Change color on hover */
+}
+
+.delete-icon {
+    font-size: 18px;
+    color: #030b13;
+    transition: color 0.3s ease;
+    cursor:pointer;
+}
+
+.delete-icon:hover {
+    color: #0056b3;  /* Change color on hover */
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Scheduling</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Event Scheduling</h1>
+        <p>Your go-to platform for creating and viewing events.</p>
+    </header>
+    <main>
+        <!--Event Creation Form-->
+        <section id="create-event">
+            <h2>
+                Create Event
+            </h2>
+            <form id="eventForm">
+                <div>
+                    <label for="eventName">Event Name:</label>
+                    <input type="text" id="eventName" name="eventName" placeholder="Enter Event Name" required> 
+                </div>
+                <div id="taskInput">
+                    <label for="eventDate">Date:</label>
+                    <input type="date" id="eventDate" name="eventDate" placeholder="Enter Event Date" required> 
+                </div>
+                <div id="taskInput">
+                    <label for="eventTime">Time:</label>
+                    <input type="time" id="eventTime" name="eventTime" placeholder="Enter Event Time" required> 
+                </div>
+                <div id="taskInput">
+                    <label for="eventLocation">Location:</label>
+                    <input type="text" id="eventLocation" name="eventLocation" placeholder="Enter Event Location" required> 
+                </div>
+                <button id="newEvent" type="submit">Create Event</button>
+            </form>
+        </section>
+
+        <!--Event Listing-->
+        <section id="event-List">
+            <h2>
+                Upcoming Events
+            </h2>
+            <ul id="events">
+                <!-- Events will dynamically added here-->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Scheduling. All rights reserved</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
